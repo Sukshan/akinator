@@ -1,0 +1,20 @@
+<% layout('boilerplate.ejs') %> 
+    <div class="d-flex align-items-center">
+        <div class=""> 
+            <img src="img/ans.png" width="600px" height="580px"> 
+        </div>
+        <div>
+            <h5 class="speech-left smallfont">
+                <%= question %>
+            </h5>
+            <form action="/ans" method="POST">
+          <button type="submit" name="answer" value="0" style="border- 
+top: white 3px solid;">Yes</button><br>
+           <button type="submit" name="answer" value="1" >No</button><br>
+           <button type="submit" name="answer" value="2" >Don't Know</button><br>
+           <button type="submit" name="answer" value="3" >Probably</button><br>
+            <button type="submit" name="answer" value="4" style="border-
+bottom: white 3px solid;">Probably not</button><br>
+            </form>
+        </div>
+    </div>
