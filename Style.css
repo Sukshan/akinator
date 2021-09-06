@@ -1,0 +1,116 @@
+body {
+ background-color: rgb(102, 153, 255);
+ font-family: "Berkshire Swash", cursive;
+ font-weight: 400;
+ font-size: 30px; 
+}
+.speech-right {
+ width: 300px;
+ border-radius: 15px;
+ background: #0049b6;
+ color: #ffd700; padding: 20px;
+ text-align: center;
+ position: relative;
+ left: 150px; top: 100px; 
+}
+.speech-right:before {
+ content: "";
+ position: absolute;
+ border-left: 15px solid #0049b6;
+ border-right: 15px solid transparent;
+ border-top: 15px solid #0049b6;
+ border-bottom: 15px solid transparent;
+ right: -16px;
+ top: 20px; 
+}
+.speech-left {
+ width: 300px;
+ border-radius: 15px;
+ background: #0049b6;
+ color: #ffd700;
+ padding: 20px;
+ text-align: center;
+ position: relative;
+ right: 150px; 
+}
+.speech-left:before {
+ content: "";
+ position: absolute;
+ border-left: 15px solid transparent;
+ border-right: 15px solid #0049b6;
+ border-top: 15px solid #0049b6;
+ border-bottom: 15px solid transparent;
+ left: -16px; top:20px;
+}
+.win-speech{ 
+ top: 120px;
+}
+.btnStyle {
+ text-decoration: none;
+ padding: 5px 20px;
+ color: #eeca00;
+ border-width: 1px;
+ border-style: solid;
+ border-color: #ffd700;
+ border-radius: 10px; 
+}
+.btnStyle:hover { 
+ color: #003a91; 
+ border-color: #003a91; 
+}
+button {
+ border: none;
+ position: relative;
+ background-color: rgba(255, 255, 255, 0.3);
+ top: 10px;
+ right: 150px;
+ width: 200px;
+ text-align: center;
+ transition: 0.5s; 
+}
+button:hover {
+ background-color: rgba(252, 229, 170);
+ border-radius: 10px;
+ color: #0049b6; 
+}
+.sizeBox{
+ height: 50px; 
+}
+@media (max-width: 768px) {
+ .smallfont { 
+   font-size: 12px; 
+ }
+ #indexBtn{
+ position: relative; right:75px; 
+ }
+ img{
+    width:300px;
+    height: 300px;
+    position: relative;
+    right: 75px; 
+ }
+ .speech-right
+ {
+ left:0px; width: 200px;
+ }
+ .speech-left{
+ right: 160px; 
+ width: 200px;
+ }
+ .noRight{
+ right: 0px;
+ }
+ .moveright{
+ top:20px; right:0px;
+ }
+ .win-img{
+ width: 150px;
+ height: auto;
+ max-width: none;
+ }
+ button{
+ right:160px;
+ padding:10px 20px;
+ top:0px;
+ } 
+}
